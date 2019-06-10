@@ -1,0 +1,647 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Default.master.cs" Inherits="ES.UI.Default" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <link rel="stylesheet" href="Assets/css/bootstrap.min.css">
+    <script src="Assets\js\Jquery\jquery-3.3.1.js"></script>
+    <script src="Assets\js/Bootstrap\bootstrap.min.js"></script>
+    <title>Emlaks</title>
+    <style>
+        #ES-navbar .banner {
+            background-color: dodgerblue;
+            /*position:fixed;
+               top: 0;
+        left: 0;
+        width: 100%;*/
+        }
+
+        #ES-navbar .bannerBorder {
+            border: 1px solid white;
+            border-top: none;
+            border-bottom: none;
+        }
+
+        #ES-navbar .MenuYazi {
+            color: white;
+            /*float: left;*/
+            padding: 10px;
+            display: inline-block;
+            margin-top: 5px;
+            font-size: 12px;
+        }
+
+        #ES-navbar .MenuYaziSag {
+            border: 1px solid white;
+            border-top: none;
+            border-bottom: none;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        #ES-navbar .IlanVer {
+            border: 1px solid whitesmoke;
+            border-radius: 3px;
+            background-color: whitesmoke;
+            padding: 5px;
+            margin-left: 25px;
+            /*margin-top: 7px;
+            margin-bottom: 7px;*/
+            color: dodgerblue;
+        }
+
+        #ES-navbar .bannerimg {
+            max-width: 1220px;
+            max-height: 550px;
+            height: 100%;
+            width: 100%;
+            margin: auto;
+        }
+
+        #ES-navbar .OneCikan {
+            color: cornflowerblue;
+            font-size: 25px;
+            margin-top: 1%;
+            margin-left: 4%;
+        }
+
+        #ES-navbar Evimg {
+            max-height: 550px;
+            max-width: 1220px;
+            height: 100%;
+            width: 100%;
+            margin: 5%;
+        }
+
+
+
+        #ES-navbar .onecikan_foto img {
+            width: 100%;
+            height: 100%;
+            max-height: 150px;
+            max-width: 250px;
+            min-height: 100px;
+            min-width: 150px;
+        }
+
+        #ES-navbar .onecikan_foto_yazi {
+            color: black;
+            font-size: 16px;
+            font-family: 'Times New Roman';
+        }
+
+        #ES-navbar .OneCikan_br {
+            border: 1px solid gray;
+            border-color: rgba(0,0,0,0.15);
+            height: 200px;
+            max-height: 250px;
+            margin: auto;
+            margin-top: 20px;
+            min-height: 100px;
+            min-width: 150px;
+        }
+
+        #ES-navbar .sol_col img {
+            width: 100%;
+            height: 550px;
+            max-height: 100%;
+            min-height: 100%;
+            padding: 10px 5px 10px 20px;
+        }
+
+        #ES-navbar .sag_col_ust img {
+            width: 100%;
+            height: 275px;
+            max-height: 100%;
+            min-height: 100%;
+            padding: 10px 20px 5px 5px;
+        }
+
+        #ES-navbar .sag_col_alt_sol img {
+            width: 100%;
+            height: 275px;
+            max-height: 100%;
+            min-height: 100%;
+            padding: 5px 0px 10px 5px;
+        }
+
+        #ES-navbar .sag_col_alt_sag img {
+            width: 100%;
+            height: 275px;
+            max-height: 100%;
+            min-height: 100%;
+            padding: 5px 20px 10px 0px;
+        }
+
+        #ES-navbar .personel {
+            padding: 50px 120px;
+        }
+
+        #ES-navbar .person {
+            border: 10px solid transparent;
+            border-radius: 50%;
+            /*margin-bottom: 30px;*/
+            width: 100%;
+            height: 80%;
+            opacity: 0.7;
+        }
+
+            #ES-navbar .person:hover {
+                border-color: #f1f1f1;
+            }
+
+        #ES-navbar .footerBaslikYazi {
+            color: white;
+            font-size: 18px;
+            padding-top: 12px;
+            padding-bottom: 5px;
+        }
+
+        #ES-navbar .footerKucukYazi {
+            color: darkgray;
+            font-size: 13px;
+        }
+
+        #ES-navbar .appimg {
+            display: inline-block;
+            padding: 2px;
+        }
+
+        #ES-navbar .IletisimYazi {
+            display: inline-block;
+            color: white;
+            font-size: 18px;
+            padding-top: 5px;
+        }
+
+        #ES-navbar .cizgi {
+            padding: 10px;
+            color: white;
+        }
+
+        #ES-navbar .footerenaltyazi {
+            color: white;
+            font-size: 10px;
+            display: inline-block;
+            padding-left: 15px;
+        }
+
+        #ES-navbar .YaziEditorunSeçimi {
+            position: absolute;
+            font-size: 15px;
+            background-color: orange;
+            top: 60px;
+            left: 120px;
+            color: white;
+            border: 3px solid orange;
+            border-radius: 5px;
+        }
+
+        #ES-navbar .Yazi1arti1 {
+            position: absolute;
+            font-size: 50px;
+            color: white;
+            top: 100px;
+            left: 120px;
+            line-height: 1.1;
+        }
+
+        #ES-navbar .YaziSolKucuk {
+            position: absolute;
+            font-size: 20px;
+            top: 300px;
+            left: 120px;
+            color: white;
+        }
+
+        #ES-navbar .textarea {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+
+        #ES-navbar .PembeYaziarkaplanSol {
+            background-color: rgb(241,102,102);
+            color: white;
+            font-size: 25px;
+            border: 3px solid rgb(241,102,102);
+            border-radius: 5px;
+            top: 410px;
+            left: 130px;
+            position: absolute;
+            padding: 5px;
+        }
+
+        #ES-navbar .sag_buyuk_resim_yazi {
+            font-size: 25px;
+            color: rgb(38,50,56);
+            left: 70px;
+            top: 50px;
+            position: absolute;
+            line-height: 1.2;
+        }
+
+        #ES-navbar .sag_buyuk_resim_yazi_2 {
+            font-size: 20px;
+            color: darkgray;
+            left: 70px;
+            top: 130px;
+            position: absolute;
+        }
+
+        #ES-navbar .sag_buyuk_resim_yazi_pembe {
+            background-color: rgb(241,102,102);
+            color: white;
+            font-size: 18px;
+            border: 2px solid rgb(241,102,102);
+            border-radius: 5px;
+            top: 180px;
+            left: 70px;
+            position: absolute;
+            padding: 5px;
+        }
+
+        #ES-navbar .sag_kucuk_resim_yazi {
+            color: rgb(38,50,56);
+            font-size: 22px;
+            top: 20px;
+            left: 45px;
+            position: absolute;
+            line-height: 1.4;
+        }
+
+        #ES-navbar .sag_kucuk_resim_yazi_2 {
+            font-size: 20px;
+            color: brown;
+            left: 45px;
+            top: 85px;
+            position: absolute;
+            line-height: 1.3;
+        }
+
+        #ES-navbar .sag_kucuk_resim_yazi_pembe {
+            background-color: rgb(241,102,102);
+            color: white;
+            font-size: 18px;
+            border: 2px solid rgb(241,102,102);
+            border-radius: 5px;
+            top: 200px;
+            left: 45px;
+            position: absolute;
+            padding: 5px;
+        }
+
+        #ES-navbar .dropdown-item {
+            color: black;
+        }
+
+        #ES-navbar .navbarDropdownMenuLink {
+            color: white;
+        }
+
+        footer .red {
+            background-color: red;
+        }
+
+        footer .white {
+            background-color: white;
+        }
+
+        footer .pink {
+            background-color: pink;
+        }
+
+        footer .border {
+            border: 50px solid white;
+        }
+
+        footer .blue {
+            background-color: blue;
+        }
+
+        footer .gray {
+            background-color: white;
+        }
+
+        footer .whitesmoke {
+            background-color: whitesmoke;
+        }
+
+        footer .minHeight300 {
+            min-height: 400px;
+        }
+
+
+
+        footer .text {
+            color: white;
+            list-style-type: none;
+            position: relative;
+            display: inline;
+            margin-top: 0px;
+            margin-right: 20px;
+            margin-left: 20px;
+            margin-bottom: 0px;
+            padding: 5px;
+        }
+
+
+        footer .text1 {
+            color: black;
+            list-style-type: none;
+            position: relative;
+            display: inline;
+            vertical-align: middle;
+        }
+
+
+
+
+
+        footer .yellow {
+            background-color: yellow;
+        }
+
+        footer .pink {
+            background-color: #3c4d53;
+        }
+
+
+        footer .altpanel1 {
+            color: white;
+        }
+
+        footer .footergraytext {
+            color: #a7b9bf;
+            font-size: small;
+        }
+
+        footer .footergraytext1 {
+            color: #a7b9bf;
+            font-size: 10px;
+            margin-top: 20px;
+            margin-right: 20px;
+        }
+
+        footer .footeralt {
+            background-color: #3a4a50;
+            padding: 0px 0px 13px 0px;
+        }
+
+        .container-fluid {
+            width: 100%;
+            padding-right: 0px;
+            padding-left: 0px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+
+    <div class="container-fluid">
+        <div id="ES-navbar">
+            <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+                <a class="navbar-brand" style="font-size: 18px;" href="/Index.aspx">Birkan Emlak</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle navbarDropdownMenuLink" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Satılık
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="liste.aspx?konutDurum=2&tur=1">Daire</a>
+                                <a class="dropdown-item" href="liste.aspx?konutDurum=2&tur=2">İşyeri</a>
+                                <a class="dropdown-item" href="liste.aspx?konutDurum=2&tur=3">Arsa</a>
+                                <a class="dropdown-item" href="liste.aspx?konutDurum=2&tur=5">Villa</a>
+                                <a class="dropdown-item" href="liste.aspx?konutDurum=2&tur=4">Dükkan</a>
+
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle navbarDropdownMenuLink" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Kiralık
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="liste.aspx?konutDurum=1&tur=1">Daire</a>
+                                <a class="dropdown-item" href="liste.aspx?konutDurum=1&tur=2">İşyeri</a>
+                                <a class="dropdown-item" href="liste.aspx?konutDurum=1&tur=3">Arsa</a>
+                                <a class="dropdown-item" href="liste.aspx?konutDurum=1&tur=5">Villa</a>
+                                <a class="dropdown-item" href="liste.aspx?konutDurum=1&tur=4">Dükkan</a>
+
+
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle navbarDropdownMenuLink" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Günlük Kiralık
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="#">Daire</a>
+                                <a class="dropdown-item" href="#">Rezidans</a>
+                                <a class="dropdown-item" href="#">Villa</a>
+
+
+
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle navbarDropdownMenuLink" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Projeler
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="#">AnaSayfa Projeler</a>
+                                <a class="dropdown-item" href="#">Yeni Projeler</a>
+                                <a class="dropdown-item" href="#">Konut Projeleri</a>
+                                <a class="dropdown-item" href="#">Toki Projeleri</a>
+
+                            </div>
+                        </li>
+
+                    </ul>
+
+                    <button type="button" style="margin-left: 400px;" class="btn btn-primary MenuYazi, MenuYaziSag" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Giriş Yap</button>
+                    <button type="button" class="btn btn-primary MenuYazi, MenuYaziSag" data-toggle="modal" data-target="#exampleModal2" data-whatever="@mdo">Üye Ol</button>
+                    <button type="button" class="btn btn-primary IlanVer" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">İlan Ver</button>
+                </div>
+
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Üye Girişi</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="recipient-name" class="col-form-label">Kullanıcı Adı:</label>
+                                        <input type="text" class="form-control" id="recipient-name" placeholder="Kullanıcı Adı">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="recipient-name" class="col-form-label">Şifre:</label>
+                                        <input type="text" class="form-control" id="recipient-name" placeholder="Şifre">
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Kapat</button>
+                                <button type="button" class="btn btn-primary">Giriş</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabelUye" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabelUye">Üye Girişi</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="recipient-name" class="col-form-label">Kullanıcı Adı:</label>
+                                        <input type="text" class="form-control" id="recipient-name" placeholder="Kullanıcı Adı" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="recipient-name" class="col-form-label">Şifre:</label>
+                                        <input type="password" class="form-control" id="inputPassword" placeholder="Şifre" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="recipient-mail" class="col-form-label">E-Posta:</label>
+                                        <input type="text" class="form-control" id="recipient-mail" value="email@ornek.com" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="recipient-date" class="col-form-label">DoğumTarihi:</label>
+                                        <input type="text" class="form-control" id="recipient-date" placeholder="DoğumTarihi" />
+                                    </div>
+                                    <div class="form-group form-check">
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                        <label class="form-check-label" for="exampleCheck1">Üyelik Sözleşmesini Okudum ve Kabul Ediyorum</label>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+
+                                <button type="button" class="btn btn-primary btn-lg btn-block">Üye Ol</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </nav>
+        </div>
+        <form id="form1" runat="server">
+            <div>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </form>
+
+        <footer>
+            <div class="row justify-content-center footer pink" style="margin-top: 50px;">
+
+
+                <div class="col-8 ">
+                    <div class="row altpanel1 " style="margin-top: 20px;">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 pink">
+                            <div>iletişim</div>
+                            <div style="margin-top: 10px;">
+                                <img src="Assets\Images\tel.png " />0(850) 312 73 73
+                            </div>
+                            <div style="color: #52ca46">
+                                <img src="Assets\Images\msj.png " />
+                                Mesaj Gönder
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 pink">
+                            <div>EmlakJet</div>
+                            <div class="footergraytext">Hakkımızda</div>
+                            <div class="footergraytext">Ödüllerimiz</div>
+                            <div class="footergraytext">Kurumsal Materyaller</div>
+                            <div class="footergraytext">Reklam</div>
+                            <div class="footergraytext">İnsan Kaynakları</div>
+                            <div class="footergraytext">Site Haritası</div>
+                            <div class="footergraytext">İletişim</div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 pink">
+                            <div>Hizmetlerimiz</div>
+                            <div class="footergraytext">Size Özel Hizmetlerimiz</div>
+                            <div class="footergraytext">Emlak Haberleri</div>
+                            <div class="footergraytext">Kurumsal Üyelik</div>
+                            <div class="footergraytext">Reklam</div>
+                            <div class="footergraytext">Projeler</div>
+                            <div class="footergraytext">Ücretsiz İlan Ver</div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 pink">
+                            <div>Mobil Uygulamalar</div>
+                            <div>
+                                <img src="Assets\Images\app.png " /><img src="Assets\Images\gplay.png " />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center altpanel2 pink">
+                <div style="margin-top: 50px">
+                    <img src="Assets\Images\emlakjet.png " />
+                </div>
+            </div>
+            <div class="row justify-content-center altpanel3 pink">
+                <div style="margin-top: 10px">
+                    <img src="Assets\Images\r1.png " />
+                </div>
+                <div style="margin-top: 10px">
+                    <img src="Assets\Images\r2.png " />
+                </div>
+                <div style="margin-top: 10px">
+                    <img src="Assets\Images\r3.png " />
+                </div>
+                <div style="margin-top: 10px">
+                    <img src="Assets\Images\r4.png " />
+                </div>
+                <div style="margin-top: 10px">
+                    <img src="Assets\Images\r5.png " />
+                </div>
+                <div style="margin-top: 10px">
+                    <img src="Assets\Images\r6.png " />
+                </div>
+                <div style="margin-top: 10px">
+                    <img src="Assets\Images\r7.png " />
+                </div>
+                <div style="margin-top: 10px">
+                    <img src="Assets\Images\r8.png " />
+                </div>
+
+            </div>
+            <div class="row justify-content-center altpanel4 footeralt">
+
+                <div class="footergraytext1">İlan Yayınlama Kuralları </div>
+                <div class="footergraytext1">Kullanım Koşulları  </div>
+                <div class="footergraytext1">Üyelik Sözleşmesi ve Gizlilik Politikası </div>
+                <div class="footergraytext1">İşlem Rehberi </div>
+                <div class="footergraytext1">Çerez Politikası </div>
+                <div class="footergraytext1">Kişisel Verilerin Korunması Hakkında  </div>
+
+
+            </div>
+
+
+        </footer>
+
+    </div>
+
+
+
+</body>
+</html>

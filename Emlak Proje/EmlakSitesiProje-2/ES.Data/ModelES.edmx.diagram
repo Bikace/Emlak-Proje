@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="7e14a20e23574f468ca397211cde8d89" Name="Diagram1" ZoomLevel="64">
+        <EntityTypeShape EntityType="EmlakSDBModel.C__MigrationHistory" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmlakSDBModel.Adre" Width="1.5" PointX="0.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmlakSDBModel.DaireTip" Width="1.5" PointX="0.75" PointY="11" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmlakSDBModel.EmlakFoto" Width="1.5" PointX="5.25" PointY="11.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmlakSDBModel.EmlakOzellik" Width="1.5" PointX="5.25" PointY="15.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmlakSDBModel.Emlak" Width="1.5" PointX="3" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmlakSDBModel.KiraSozlesme" Width="1.5" PointX="7.5" PointY="14.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmlakSDBModel.Musteri" Width="1.5" PointX="5.25" PointY="22" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmlakSDBModel.OdemePlan" Width="1.5" PointX="12" PointY="22.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmlakSDBModel.Personel" Width="1.5" PointX="3" PointY="29.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmlakSDBModel.Portfoy" Width="1.5" PointX="7.5" PointY="21.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmlakSDBModel.SatisSozlesme" Width="1.5" PointX="7.5" PointY="27.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmlakSDBModel.Sozlesme" Width="1.5" PointX="9.75" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmlakSDBModel.sysdiagram" Width="1.5" PointX="2.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmlakSDBModel.Tur" Width="1.5" PointX="0.75" PointY="22.25" IsExpanded="true" />
+        <AssociationConnector Association="EmlakSDBModel.FK_dbo_Emlaks_dbo_Adres_Adresi_AdresID" ManuallyRouted="false" />
+        <AssociationConnector Association="EmlakSDBModel.FK_dbo_Musteris_dbo_Adres_Adresi_AdresID" ManuallyRouted="false" />
+        <AssociationConnector Association="EmlakSDBModel.FK_dbo_Personels_dbo_Adres_Adresi_AdresID" ManuallyRouted="false" />
+        <AssociationConnector Association="EmlakSDBModel.FK_dbo_Emlaks_dbo_DaireTips_Dairetipi_DaireTipID" ManuallyRouted="false" />
+        <AssociationConnector Association="EmlakSDBModel.FK_dbo_EmlakFotoes_dbo_Emlaks_Emlak_EmlakID" ManuallyRouted="false" />
+        <AssociationConnector Association="EmlakSDBModel.FK_dbo_EmlakOzelliks_dbo_Emlaks_Emlak_EmlakID" ManuallyRouted="false" />
+        <AssociationConnector Association="EmlakSDBModel.FK_dbo_Emlaks_dbo_Musteris_Sahibi_MusteriID" ManuallyRouted="false" />
+        <AssociationConnector Association="EmlakSDBModel.FK_dbo_Emlaks_dbo_Turs_Turu_TurID" ManuallyRouted="false" />
+        <AssociationConnector Association="EmlakSDBModel.FK_dbo_Portfoys_dbo_Emlaks_Emlaki_EmlakID" ManuallyRouted="false" />
+        <AssociationConnector Association="EmlakSDBModel.FK_dbo_Sozlesmes_dbo_KiraSozlesmes_KiraSozlesmesi_KiraSozlesmeID" ManuallyRouted="false" />
+        <AssociationConnector Association="EmlakSDBModel.FK_dbo_Musteris_dbo_Personels_Personel_PersonelID" ManuallyRouted="false" />
+        <AssociationConnector Association="EmlakSDBModel.FK_dbo_Portfoys_dbo_Musteris_Musteriler_MusteriID" ManuallyRouted="false" />
+        <AssociationConnector Association="EmlakSDBModel.FK_dbo_Sozlesmes_dbo_Musteris_Musterisi_MusteriID" ManuallyRouted="false" />
+        <AssociationConnector Association="EmlakSDBModel.FK_dbo_OdemePlans_dbo_Sozlesmes_Sozlesme_SozlesmeID" ManuallyRouted="false" />
+        <AssociationConnector Association="EmlakSDBModel.FK_dbo_Sozlesmes_dbo_OdemePlans_OdemePlan_OdemePlanID" ManuallyRouted="false" />
+        <AssociationConnector Association="EmlakSDBModel.FK_dbo_Sozlesmes_dbo_OdemePlans_OdemePlani_OdemePlanID" ManuallyRouted="false" />
+        <AssociationConnector Association="EmlakSDBModel.FK_dbo_Portfoys_dbo_Personels_Personeli_PersonelID" ManuallyRouted="false" />
+        <AssociationConnector Association="EmlakSDBModel.FK_dbo_Sozlesmes_dbo_Portfoys_Portfoyu_PortfoyID" ManuallyRouted="false" />
+        <AssociationConnector Association="EmlakSDBModel.FK_dbo_Sozlesmes_dbo_SatisSozlesmes_SatisSozlesmesi_SatisSozlesmeID" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="EmlakSDBModel.KonutDurum" Width="1.5" PointX="0.75" PointY="7.125" />
+        <EntityTypeShape EntityType="EmlakSDBModel.MusteriLike" Width="1.5" PointX="7.5" PointY="18.125" />
+        <EntityTypeShape EntityType="EmlakSDBModel.User" Width="1.5" PointX="5.375" PointY="4.75" />
+        <AssociationConnector Association="EmlakSDBModel.FK_dbo_Emlaks_dbo_KonutDurums_Durumu_KonutDurumID" />
+        <AssociationConnector Association="EmlakSDBModel.FK_MusteriLikes_Emlaks" />
+        <AssociationConnector Association="EmlakSDBModel.FK_MusteriLikes_Musteris" />
+        <EntityTypeShape EntityType="EmlakSDBModel.Slider" Width="1.5" PointX="5.375" PointY="0.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

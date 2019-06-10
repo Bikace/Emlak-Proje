@@ -1,0 +1,128 @@
+C:\Users\Naz\source\repos\EmlakSitesiProje-2\ES.Data\bin\Debug\ES.Data.dll.config
+C:\Users\Naz\source\repos\EmlakSitesiProje-2\ES.Data\bin\Debug\ES.Data.dll
+C:\Users\Naz\source\repos\EmlakSitesiProje-2\ES.Data\bin\Debug\ES.Data.pdb
+C:\Users\Naz\source\repos\EmlakSitesiProje-2\ES.Data\bin\Debug\EntityFramework.dll
+C:\Users\Naz\source\repos\EmlakSitesiProje-2\ES.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Naz\source\repos\EmlakSitesiProje-2\ES.Data\bin\Debug\EntityFramework.xml
+C:\Users\Naz\source\repos\EmlakSitesiProje-2\ES.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Naz\source\repos\EmlakSitesiProje-2\ES.Data\obj\Debug\ES.Data.csproj.CoreCompileInputs.cache
+C:\Users\Naz\source\repos\EmlakSitesiProje-2\ES.Data\obj\Debug\ES.Data.csproj.CopyComplete
+C:\Users\Naz\source\repos\EmlakSitesiProje-2\ES.Data\obj\Debug\ES.Data.dll
+C:\Users\Naz\source\repos\EmlakSitesiProje-2\ES.Data\obj\Debug\ES.Data.pdb
+C:\Users\Naz\source\repos\EmlakSitesiProje-2\ES.Data\obj\Debug\ES.Data.csprojAssemblyReference.cache
+C:\Users\muhammed.delice\Desktop\EmlakSitesiProje-2\ES.Data\bin\Debug\ES.Data.dll.config
+C:\Users\muhammed.delice\Desktop\EmlakSitesiProje-2\ES.Data\bin\Debug\ES.Data.dll
+C:\Users\muhammed.delice\Desktop\EmlakSitesiProje-2\ES.Data\bin\Debug\ES.Data.pdb
+C:\Users\muhammed.delice\Desktop\EmlakSitesiProje-2\ES.Data\bin\Debug\EntityFramework.dll
+C:\Users\muhammed.delice\Desktop\EmlakSitesiProje-2\ES.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\muhammed.delice\Desktop\EmlakSitesiProje-2\ES.Data\bin\Debug\EntityFramework.xml
+C:\Users\muhammed.delice\Desktop\EmlakSitesiProje-2\ES.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\muhammed.delice\Desktop\EmlakSitesiProje-2\ES.Data\obj\Debug\ES.Data.csprojAssemblyReference.cache
+C:\Users\muhammed.delice\Desktop\EmlakSitesiProje-2\ES.Data\obj\Debug\ES.Data.csproj.CoreCompileInputs.cache
+C:\Users\muhammed.delice\Desktop\EmlakSitesiProje-2\ES.Data\obj\Debug\ES.Data.csproj.CopyComplete
+C:\Users\muhammed.delice\Desktop\EmlakSitesiProje-2\ES.Data\obj\Debug\ES.Data.dll
+C:\Users\muhammed.delice\Desktop\EmlakSitesiProje-2\ES.Data\obj\Debug\ES.Data.pdb
+C:\Users\korkut.saricayir\Desktop\EmlakSitesiProje-2\EmlakSitesiProje-2\ES.Data\bin\Debug\ES.Data.dll.config
+C:\Users\korkut.saricayir\Desktop\EmlakSitesiProje-2\EmlakSitesiProje-2\ES.Data\bin\Debug\ES.Data.dll
+C:\Users\korkut.saricayir\Desktop\EmlakSitesiProje-2\EmlakSitesiProje-2\ES.Data\bin\Debug\ES.Data.pdb
+C:\Users\korkut.saricayir\Desktop\EmlakSitesiProje-2\EmlakSitesiProje-2\ES.Data\bin\Debug\EntityFramework.dll
+C:\Users\korkut.saricayir\Desktop\EmlakSitesiProje-2\EmlakSitesiProje-2\ES.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\korkut.saricayir\Desktop\EmlakSitesiProje-2\EmlakSitesiProje-2\ES.Data\bin\Debug\EntityFramework.xml
+C:\Users\korkut.saricayir\Desktop\EmlakSitesiProje-2\EmlakSitesiProje-2\ES.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\korkut.saricayir\Desktop\EmlakSitesiProje-2\EmlakSitesiProje-2\ES.Data\obj\Debug\ES.Data.csprojResolveAssemblyReference.cache
+C:\Users\korkut.saricayir\Desktop\EmlakSitesiProje-2\EmlakSitesiProje-2\ES.Data\obj\Debug\ES.Data.dll
+C:\Users\korkut.saricayir\Desktop\EmlakSitesiProje-2\EmlakSitesiProje-2\ES.Data\obj\Debug\ES.Data.pdb
+C:\Users\korkuts\Desktop\EMLAKPROJECT\EmlakSitesiProje-2\ES.Data\bin\Debug\ES.Data.dll.config
+C:\Users\korkuts\Desktop\EMLAKPROJECT\EmlakSitesiProje-2\ES.Data\bin\Debug\ES.Data.dll
+C:\Users\korkuts\Desktop\EMLAKPROJECT\EmlakSitesiProje-2\ES.Data\bin\Debug\ES.Data.pdb
+C:\Users\korkuts\Desktop\EMLAKPROJECT\EmlakSitesiProje-2\ES.Data\bin\Debug\EntityFramework.dll
+C:\Users\korkuts\Desktop\EMLAKPROJECT\EmlakSitesiProje-2\ES.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\korkuts\Desktop\EMLAKPROJECT\EmlakSitesiProje-2\ES.Data\bin\Debug\EntityFramework.xml
+C:\Users\korkuts\Desktop\EMLAKPROJECT\EmlakSitesiProje-2\ES.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\korkuts\Desktop\EMLAKPROJECT\EmlakSitesiProje-2\ES.Data\obj\Debug\ES.Data.csprojAssemblyReference.cache
+C:\Users\korkuts\Desktop\EMLAKPROJECT\EmlakSitesiProje-2\ES.Data\obj\Debug\ES.Data.csproj.CoreCompileInputs.cache
+C:\Users\korkuts\Desktop\EMLAKPROJECT\EmlakSitesiProje-2\ES.Data\obj\Debug\ES.Data.csproj.CopyComplete
+C:\Users\korkuts\Desktop\EMLAKPROJECT\EmlakSitesiProje-2\ES.Data\obj\Debug\ES.Data.dll
+C:\Users\korkuts\Desktop\EMLAKPROJECT\EmlakSitesiProje-2\ES.Data\obj\Debug\ES.Data.pdb
+E:\EMLAKPROJECT\EMLAKPROJECT\EmlakSitesiProje-2\ES.Data\bin\Debug\ES.Data.dll.config
+E:\EMLAKPROJECT\EMLAKPROJECT\EmlakSitesiProje-2\ES.Data\bin\Debug\ES.Data.dll
+E:\EMLAKPROJECT\EMLAKPROJECT\EmlakSitesiProje-2\ES.Data\bin\Debug\ES.Data.pdb
+E:\EMLAKPROJECT\EMLAKPROJECT\EmlakSitesiProje-2\ES.Data\bin\Debug\EntityFramework.dll
+E:\EMLAKPROJECT\EMLAKPROJECT\EmlakSitesiProje-2\ES.Data\bin\Debug\EntityFramework.SqlServer.dll
+E:\EMLAKPROJECT\EMLAKPROJECT\EmlakSitesiProje-2\ES.Data\bin\Debug\EntityFramework.xml
+E:\EMLAKPROJECT\EMLAKPROJECT\EmlakSitesiProje-2\ES.Data\bin\Debug\EntityFramework.SqlServer.xml
+E:\EMLAKPROJECT\EMLAKPROJECT\EmlakSitesiProje-2\ES.Data\obj\Debug\ES.Data.csprojAssemblyReference.cache
+E:\EMLAKPROJECT\EMLAKPROJECT\EmlakSitesiProje-2\ES.Data\obj\Debug\ES.Data.csproj.CoreCompileInputs.cache
+E:\EMLAKPROJECT\EMLAKPROJECT\EmlakSitesiProje-2\ES.Data\obj\Debug\ES.Data.csproj.CopyComplete
+E:\EMLAKPROJECT\EMLAKPROJECT\EmlakSitesiProje-2\ES.Data\obj\Debug\ES.Data.dll
+E:\EMLAKPROJECT\EMLAKPROJECT\EmlakSitesiProje-2\ES.Data\obj\Debug\ES.Data.pdb
+C:\Users\korkuts\Desktop\Emlak\EMLAKPROJECT\EMLAKPROJECT\EmlakSitesiProje-2\ES.Data\bin\Debug\ES.Data.dll.config
+C:\Users\korkuts\Desktop\Emlak\EMLAKPROJECT\EMLAKPROJECT\EmlakSitesiProje-2\ES.Data\bin\Debug\ES.Data.dll
+C:\Users\korkuts\Desktop\Emlak\EMLAKPROJECT\EMLAKPROJECT\EmlakSitesiProje-2\ES.Data\bin\Debug\ES.Data.pdb
+C:\Users\korkuts\Desktop\Emlak\EMLAKPROJECT\EMLAKPROJECT\EmlakSitesiProje-2\ES.Data\bin\Debug\EntityFramework.dll
+C:\Users\korkuts\Desktop\Emlak\EMLAKPROJECT\EMLAKPROJECT\EmlakSitesiProje-2\ES.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\korkuts\Desktop\Emlak\EMLAKPROJECT\EMLAKPROJECT\EmlakSitesiProje-2\ES.Data\bin\Debug\EntityFramework.xml
+C:\Users\korkuts\Desktop\Emlak\EMLAKPROJECT\EMLAKPROJECT\EmlakSitesiProje-2\ES.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\korkuts\Desktop\Emlak\EMLAKPROJECT\EMLAKPROJECT\EmlakSitesiProje-2\ES.Data\obj\Debug\ES.Data.csprojAssemblyReference.cache
+C:\Users\korkuts\Desktop\Emlak\EMLAKPROJECT\EMLAKPROJECT\EmlakSitesiProje-2\ES.Data\obj\Debug\ES.Data.csproj.CoreCompileInputs.cache
+C:\Users\korkuts\Desktop\Emlak\EMLAKPROJECT\EMLAKPROJECT\EmlakSitesiProje-2\ES.Data\obj\Debug\ES.Data.csproj.CopyComplete
+C:\Users\korkuts\Desktop\Emlak\EMLAKPROJECT\EMLAKPROJECT\EmlakSitesiProje-2\ES.Data\obj\Debug\ES.Data.dll
+C:\Users\korkuts\Desktop\Emlak\EMLAKPROJECT\EMLAKPROJECT\EmlakSitesiProje-2\ES.Data\obj\Debug\ES.Data.pdb
+C:\Users\muhammed.delice\Desktop\Yeni klasör (6)\EmlakSitesiProje-2\ES.Data\bin\Debug\ES.Data.dll.config
+C:\Users\muhammed.delice\Desktop\Yeni klasör (6)\EmlakSitesiProje-2\ES.Data\bin\Debug\ES.Data.dll
+C:\Users\muhammed.delice\Desktop\Yeni klasör (6)\EmlakSitesiProje-2\ES.Data\bin\Debug\ES.Data.pdb
+C:\Users\muhammed.delice\Desktop\Yeni klasör (6)\EmlakSitesiProje-2\ES.Data\bin\Debug\EntityFramework.dll
+C:\Users\muhammed.delice\Desktop\Yeni klasör (6)\EmlakSitesiProje-2\ES.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\muhammed.delice\Desktop\Yeni klasör (6)\EmlakSitesiProje-2\ES.Data\bin\Debug\EntityFramework.xml
+C:\Users\muhammed.delice\Desktop\Yeni klasör (6)\EmlakSitesiProje-2\ES.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\muhammed.delice\Desktop\Yeni klasör (6)\EmlakSitesiProje-2\ES.Data\obj\Debug\ES.Data.csprojAssemblyReference.cache
+C:\Users\muhammed.delice\Desktop\Yeni klasör (6)\EmlakSitesiProje-2\ES.Data\obj\Debug\ES.Data.csproj.CoreCompileInputs.cache
+C:\Users\muhammed.delice\Desktop\Yeni klasör (6)\EmlakSitesiProje-2\ES.Data\obj\Debug\ES.Data.csproj.CopyComplete
+C:\Users\muhammed.delice\Desktop\Yeni klasör (6)\EmlakSitesiProje-2\ES.Data\obj\Debug\ES.Data.dll
+C:\Users\muhammed.delice\Desktop\Yeni klasör (6)\EmlakSitesiProje-2\ES.Data\obj\Debug\ES.Data.pdb
+C:\Users\muhammed.delice\Desktop\27-03-2019 EmlakSite\EmlakSitesiProje-2\ES.Data\bin\Debug\ES.Data.dll.config
+C:\Users\muhammed.delice\Desktop\27-03-2019 EmlakSite\EmlakSitesiProje-2\ES.Data\bin\Debug\ES.Data.dll
+C:\Users\muhammed.delice\Desktop\27-03-2019 EmlakSite\EmlakSitesiProje-2\ES.Data\bin\Debug\ES.Data.pdb
+C:\Users\muhammed.delice\Desktop\27-03-2019 EmlakSite\EmlakSitesiProje-2\ES.Data\bin\Debug\EntityFramework.dll
+C:\Users\muhammed.delice\Desktop\27-03-2019 EmlakSite\EmlakSitesiProje-2\ES.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\muhammed.delice\Desktop\27-03-2019 EmlakSite\EmlakSitesiProje-2\ES.Data\bin\Debug\EntityFramework.xml
+C:\Users\muhammed.delice\Desktop\27-03-2019 EmlakSite\EmlakSitesiProje-2\ES.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\muhammed.delice\Desktop\27-03-2019 EmlakSite\EmlakSitesiProje-2\ES.Data\obj\Debug\ES.Data.csprojAssemblyReference.cache
+C:\Users\muhammed.delice\Desktop\27-03-2019 EmlakSite\EmlakSitesiProje-2\ES.Data\obj\Debug\ES.Data.csproj.CoreCompileInputs.cache
+C:\Users\muhammed.delice\Desktop\27-03-2019 EmlakSite\EmlakSitesiProje-2\ES.Data\obj\Debug\ES.Data.csproj.CopyComplete
+C:\Users\muhammed.delice\Desktop\27-03-2019 EmlakSite\EmlakSitesiProje-2\ES.Data\obj\Debug\ES.Data.dll
+C:\Users\muhammed.delice\Desktop\27-03-2019 EmlakSite\EmlakSitesiProje-2\ES.Data\obj\Debug\ES.Data.pdb
+C:\Users\naz.simsek\Desktop\NazHoca\EmlakSitesiProje-2\ES.Data\bin\Debug\ES.Data.dll.config
+C:\Users\naz.simsek\Desktop\NazHoca\EmlakSitesiProje-2\ES.Data\bin\Debug\ES.Data.dll
+C:\Users\naz.simsek\Desktop\NazHoca\EmlakSitesiProje-2\ES.Data\bin\Debug\ES.Data.pdb
+C:\Users\naz.simsek\Desktop\NazHoca\EmlakSitesiProje-2\ES.Data\bin\Debug\EntityFramework.dll
+C:\Users\naz.simsek\Desktop\NazHoca\EmlakSitesiProje-2\ES.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\naz.simsek\Desktop\NazHoca\EmlakSitesiProje-2\ES.Data\bin\Debug\EntityFramework.xml
+C:\Users\naz.simsek\Desktop\NazHoca\EmlakSitesiProje-2\ES.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\naz.simsek\Desktop\NazHoca\EmlakSitesiProje-2\ES.Data\obj\Debug\ES.Data.dll
+C:\Users\naz.simsek\Desktop\NazHoca\EmlakSitesiProje-2\ES.Data\obj\Debug\ES.Data.pdb
+C:\Users\naz.simsek\Desktop\NazHoca\EmlakSitesiProje-2\ES.Data\obj\Debug\ES.Data.csprojResolveAssemblyReference.cache
+C:\Users\Naz\Desktop\NazHoca\EmlakSitesiProje-2\ES.Data\bin\Debug\ES.Data.dll.config
+C:\Users\Naz\Desktop\NazHoca\EmlakSitesiProje-2\ES.Data\bin\Debug\ES.Data.dll
+C:\Users\Naz\Desktop\NazHoca\EmlakSitesiProje-2\ES.Data\bin\Debug\ES.Data.pdb
+C:\Users\Naz\Desktop\NazHoca\EmlakSitesiProje-2\ES.Data\bin\Debug\EntityFramework.dll
+C:\Users\Naz\Desktop\NazHoca\EmlakSitesiProje-2\ES.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Naz\Desktop\NazHoca\EmlakSitesiProje-2\ES.Data\bin\Debug\EntityFramework.xml
+C:\Users\Naz\Desktop\NazHoca\EmlakSitesiProje-2\ES.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Naz\Desktop\NazHoca\EmlakSitesiProje-2\ES.Data\obj\Debug\ES.Data.csprojAssemblyReference.cache
+C:\Users\Naz\Desktop\NazHoca\EmlakSitesiProje-2\ES.Data\obj\Debug\ES.Data.csproj.CoreCompileInputs.cache
+C:\Users\Naz\Desktop\NazHoca\EmlakSitesiProje-2\ES.Data\obj\Debug\ES.Data.csproj.CopyComplete
+C:\Users\Naz\Desktop\NazHoca\EmlakSitesiProje-2\ES.Data\obj\Debug\ES.Data.dll
+C:\Users\Naz\Desktop\NazHoca\EmlakSitesiProje-2\ES.Data\obj\Debug\ES.Data.pdb
+C:\Users\soner.kose\Desktop\Proje\EmlakSitesiProje-2\ES.Data\bin\Debug\ES.Data.dll.config
+C:\Users\soner.kose\Desktop\Proje\EmlakSitesiProje-2\ES.Data\bin\Debug\ES.Data.dll
+C:\Users\soner.kose\Desktop\Proje\EmlakSitesiProje-2\ES.Data\bin\Debug\ES.Data.pdb
+C:\Users\soner.kose\Desktop\Proje\EmlakSitesiProje-2\ES.Data\bin\Debug\EntityFramework.dll
+C:\Users\soner.kose\Desktop\Proje\EmlakSitesiProje-2\ES.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\soner.kose\Desktop\Proje\EmlakSitesiProje-2\ES.Data\bin\Debug\EntityFramework.xml
+C:\Users\soner.kose\Desktop\Proje\EmlakSitesiProje-2\ES.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\soner.kose\Desktop\Proje\EmlakSitesiProje-2\ES.Data\obj\Debug\ES.Data.csprojAssemblyReference.cache
+C:\Users\soner.kose\Desktop\Proje\EmlakSitesiProje-2\ES.Data\obj\Debug\ES.Data.csproj.CoreCompileInputs.cache
+C:\Users\soner.kose\Desktop\Proje\EmlakSitesiProje-2\ES.Data\obj\Debug\ES.Data.csproj.CopyComplete
+C:\Users\soner.kose\Desktop\Proje\EmlakSitesiProje-2\ES.Data\obj\Debug\ES.Data.dll
+C:\Users\soner.kose\Desktop\Proje\EmlakSitesiProje-2\ES.Data\obj\Debug\ES.Data.pdb

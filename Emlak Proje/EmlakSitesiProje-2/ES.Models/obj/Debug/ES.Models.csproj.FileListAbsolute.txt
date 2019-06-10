@@ -1,0 +1,17 @@
+C:\Users\Naz\source\repos\EmlakSitesiProje-2\ES.Models\bin\Debug\ES.Models.dll
+C:\Users\Naz\source\repos\EmlakSitesiProje-2\ES.Models\bin\Debug\ES.Models.pdb
+C:\Users\Naz\source\repos\EmlakSitesiProje-2\ES.Models\obj\Debug\ES.Models.csproj.CoreCompileInputs.cache
+C:\Users\Naz\source\repos\EmlakSitesiProje-2\ES.Models\obj\Debug\ES.Models.dll
+C:\Users\Naz\source\repos\EmlakSitesiProje-2\ES.Models\obj\Debug\ES.Models.pdb
+C:\Users\soner.kose\Desktop\EmlakSitesiProje-2\ES.Models\bin\Debug\ES.Models.dll
+C:\Users\soner.kose\Desktop\EmlakSitesiProje-2\ES.Models\bin\Debug\ES.Models.pdb
+C:\Users\soner.kose\Desktop\EmlakSitesiProje-2\ES.Models\obj\Debug\ES.Models.dll
+C:\Users\soner.kose\Desktop\EmlakSitesiProje-2\ES.Models\obj\Debug\ES.Models.pdb
+C:\Users\soner.kose\Desktop\EmlakSitesiProje-2\ES.Models\obj\Debug\ES.Models.csprojAssemblyReference.cache
+C:\Users\soner.kose\Desktop\EmlakSitesiProje-2\ES.Models\obj\Debug\ES.Models.csproj.CoreCompileInputs.cache
+C:\Users\soner.kose\Desktop\Proje\EmlakSitesiProje-2\ES.Models\bin\Debug\ES.Models.dll
+C:\Users\soner.kose\Desktop\Proje\EmlakSitesiProje-2\ES.Models\bin\Debug\ES.Models.pdb
+C:\Users\soner.kose\Desktop\Proje\EmlakSitesiProje-2\ES.Models\obj\Debug\ES.Models.csprojAssemblyReference.cache
+C:\Users\soner.kose\Desktop\Proje\EmlakSitesiProje-2\ES.Models\obj\Debug\ES.Models.csproj.CoreCompileInputs.cache
+C:\Users\soner.kose\Desktop\Proje\EmlakSitesiProje-2\ES.Models\obj\Debug\ES.Models.dll
+C:\Users\soner.kose\Desktop\Proje\EmlakSitesiProje-2\ES.Models\obj\Debug\ES.Models.pdb

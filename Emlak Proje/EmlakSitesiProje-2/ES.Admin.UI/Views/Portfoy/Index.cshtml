@@ -1,0 +1,129 @@
+﻿@model IEnumerable<ES.Admin.UI.Models.PortfoyDTO>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.PortfoyTakas)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PortfoyAciklamaBaslik)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PortfoyAciklama)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PortfoyOneCikan)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MusteriAdi)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MusteriSoyadi)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EmlakDaireNo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EmlakPiyasaBedeli)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EmlakKiraBedeli)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EmlakAidat)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EmlakCephe)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EmlakIsinmaSekli)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EmlakOtopark)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DaireTip)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.KonutDurum)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Turu)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EmlakAdresIl)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EmlakAdresIlce)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EmlakAdresKoordinat)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MusteriAdresIl)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MusteriAdresIlce)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MusteriAdresKoordinat)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        using (Html.BeginForm("Delete", "Portfoy", new { id = item.PortfoyID }))
+        {
+            <tr>
+                
+                <td>
+                    @Html.DisplayFor(modelItem => item.PortfoyAciklamaBaslik)
+                </td>
+                
+                <td>
+                    @Html.DisplayFor(modelItem => item.MusteriAdi)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.MusteriSoyadi)
+                </td>
+                
+                <td>
+                    @Html.DisplayFor(modelItem => item.DaireTip)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.KonutDurum)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Turu)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.EmlakAdresIl)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.EmlakAdresIlce)
+                </td>
+                
+                <td>
+                    @*@Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ })*@
+                    @Html.ActionLink("Edit", "Edit", new { id = item.PortfoyID }) |
+                    @*@Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ })*@
+                    <input type="submit" id="sbmBtn1" value="details" /> |
+                    @*@Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })*@
+                    <input type="submit" id="sbmBtn" value="delete" />
+                </td>
+            </tr>
+        }
+    }
+
+</table>

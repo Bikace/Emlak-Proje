@@ -1,0 +1,66 @@
+﻿@model IEnumerable<ES.Data.Musteri>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Müşteri Oluştur", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Adi)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Soyadi)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TC)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DogumTarihi)
+        </th>
+        
+        <th>
+            @Html.DisplayNameFor(model => model.Adre.Il)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Personel.Adi)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Adi)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Soyadi)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TC)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DogumTarihi)
+        </td>
+       
+        <td>
+            @Html.DisplayFor(modelItem => item.Adre.Il)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Personel.Adi)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.MusteriID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.MusteriID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.MusteriID })
+        </td>
+    </tr>
+}
+
+</table>

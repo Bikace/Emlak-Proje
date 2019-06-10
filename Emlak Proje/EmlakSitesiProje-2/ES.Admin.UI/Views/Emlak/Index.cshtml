@@ -1,0 +1,106 @@
+﻿@model IEnumerable<ES.Data.Emlak>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Emlak oluştur", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.KatNumarasi)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DaireNo)
+        </th>
+       
+        <th>
+            @Html.DisplayNameFor(model => model.KiraBedeli)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Aidat)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BinaYasi)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.KatSayisi)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Cephe)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IsinmaSekli)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Otopark)
+        </th>
+
+        <th>
+            @Html.DisplayNameFor(model => model.Adre.Il)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DaireTip.Adi)
+        </th>
+ 
+        <th>
+            @Html.DisplayNameFor(model => model.KonutDurum.Adi)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.KatNumarasi)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DaireNo)
+        </td>
+       
+        <td>
+            @Html.DisplayFor(modelItem => item.KiraBedeli)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Aidat)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BinaYasi)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.KatSayisi)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Cephe)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IsinmaSekli)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Otopark)
+        </td>
+
+        <td>
+            @Html.DisplayFor(modelItem => item.Adre.Il)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DaireTip.Adi)
+        </td>
+
+        <td>
+            @Html.DisplayFor(modelItem => item.KonutDurum.Adi)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.EmlakID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.EmlakID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.EmlakID })
+        </td>
+    </tr>
+}
+
+</table>

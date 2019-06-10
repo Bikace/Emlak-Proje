@@ -1,0 +1,5 @@
+  Zaman: 28.03.2019 19:46:23
+                                Islem : Fiyat Artan Azalan
+                                Metot: ddFiyatArtanAzalan_SelectedIndexChanged
+                                Mesaj: Başarılı
+                                Durum: Succes

@@ -1,0 +1,295 @@
+
+        .banner {
+            background-color: dodgerblue;
+            /*position:fixed;
+               top: 0;
+        left: 0;
+        width: 100%;*/
+        }
+
+        .bannerBorder {
+            border: 1px solid white;
+            border-top: none;
+            border-bottom: none;
+        }
+
+        .MenuYazi {
+            color: white;
+            /*float: left;*/
+            padding: 10px;
+            display: inline-block;
+            margin-top: 5px;
+            font-size: 12px;
+        }
+
+        .MenuYaziSag {
+            border: 1px solid white;
+            border-top: none;
+            border-bottom: none;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .IlanVer {
+            border: 1px solid whitesmoke;
+            border-radius: 3px;
+            background-color: whitesmoke;
+            padding: 5px;
+            margin-left: 25px;
+            /*margin-top: 7px;
+            margin-bottom: 7px;*/
+            color: dodgerblue;
+        }
+
+        .bannerimg {
+            max-width: 1220px;
+            max-height: 550px;
+            height: 100%;
+            width: 100%;
+            margin: auto;
+        }
+
+        .OneCikan {
+            color: cornflowerblue;
+            font-size: 25px;
+            margin-top: 1%;
+            margin-left: 4%;
+        }
+
+        Evimg {
+            max-height: 550px;
+            max-width: 1220px;
+            height: 100%;
+            width: 100%;
+            margin: 5%;
+        }
+
+
+
+        .onecikan_foto img {
+            width: 100%;
+            height: 100%;
+            max-height: 150px;
+            max-width: 250px;
+            min-height: 100px;
+            min-width: 150px;
+        }
+
+        .onecikan_foto_yazi {
+            color: black;
+            font-size: 16px;
+            font-family: 'Times New Roman';
+            
+        }
+
+        .OneCikan_br {
+            border: 1px solid gray;
+            border-color: rgba(0,0,0,0.15);
+            height: 200px;
+            max-height: 250px;
+            margin: auto;
+            margin-top: 20px;
+            min-height: 100px;
+            min-width: 150px;
+        }
+
+        .sol_col img {
+            width: 100%;
+            height: 550px;
+            max-height: 100%;
+            min-height: 100%;
+            padding: 10px 5px 10px 20px;
+        }
+
+        .sag_col_ust img {
+            width: 100%;
+            height: 275px;
+            max-height: 100%;
+            min-height: 100%;
+            padding: 10px 20px 5px 5px;
+        }
+
+        .sag_col_alt_sol img {
+            width: 100%;
+            height: 275px;
+            max-height: 100%;
+            min-height: 100%;
+            padding: 5px 0px 10px 5px;
+        }
+
+        .sag_col_alt_sag img {
+            width: 100%;
+            height: 275px;
+            max-height: 100%;
+            min-height: 100%;
+            padding: 5px 20px 10px 0px;
+        }
+
+        .personel {
+            padding: 50px 120px;
+        }
+
+        .person {
+            border: 10px solid transparent;
+            border-radius: 50%;
+            /*margin-bottom: 30px;*/
+            width: 100%;
+            height: 80%;
+            opacity: 0.7;
+        }
+
+            .person:hover {
+                border-color: #f1f1f1;
+            }
+
+        .footerBaslikYazi {
+            color: white;
+            font-size: 18px;
+            padding-top: 12px;
+            padding-bottom: 5px;
+        }
+
+        .footerKucukYazi {
+            color: darkgray;
+            font-size: 13px;
+        }
+
+        .appimg {
+            display: inline-block;
+            padding: 2px;
+        }
+
+        .IletisimYazi {
+            display: inline-block;
+            color: white;
+            font-size: 18px;
+            padding-top: 5px;
+        }
+
+        .cizgi {
+            padding: 10px;
+            color: white;
+        }
+
+        .footerenaltyazi {
+            color: white;
+            font-size: 10px;
+            display: inline-block;
+            padding-left: 15px;
+        }
+
+        .YaziEditorunSeçimi {
+            position: absolute;
+            font-size: 15px;
+            background-color: orange;
+            top: 60px;
+            left: 120px;
+            color: white;
+            border: 3px solid orange;
+            border-radius: 5px;
+        }
+
+        .Yazi1arti1 {
+            position: absolute;
+            font-size: 50px;
+            color: white;
+            top: 100px;
+            left: 120px;
+            line-height: 1.1;
+        }
+
+        .YaziSolKucuk {
+            position: absolute;
+            font-size: 20px;
+            top: 300px;
+            left: 120px;
+            color: white;
+        }
+
+        .textarea {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+
+        .PembeYaziarkaplanSol {
+            background-color: rgb(241,102,102);
+            color: white;
+            font-size: 25px;
+            border: 3px solid rgb(241,102,102);
+            border-radius: 5px;
+            top: 410px;
+            left: 130px;
+            position: absolute;
+            padding: 5px;
+        }
+
+        .sag_buyuk_resim_yazi {
+            font-size: 25px;
+            color: rgb(38,50,56);
+            left: 70px;
+            top: 50px;
+            position: absolute;
+            line-height: 1.2;
+        }
+
+        .sag_buyuk_resim_yazi_2 {
+            font-size: 20px;
+            color: darkgray;
+            left: 70px;
+            top: 130px;
+            position: absolute;
+        }
+
+        .sag_buyuk_resim_yazi_pembe {
+            background-color: rgb(241,102,102);
+            color: white;
+            font-size: 18px;
+            border: 2px solid rgb(241,102,102);
+            border-radius: 5px;
+            top: 180px;
+            left: 70px;
+            position: absolute;
+            padding: 5px;
+        }
+
+        .sag_kucuk_resim_yazi {
+            color: rgb(38,50,56);
+            font-size: 22px;
+            top: 20px;
+            left: 45px;
+            position: absolute;
+            line-height: 1.4;
+        }
+
+        .sag_kucuk_resim_yazi_2 {
+            font-size: 20px;
+            color: brown;
+            left: 45px;
+            top: 85px;
+            position: absolute;
+            line-height: 1.3;
+        }
+
+        .sag_kucuk_resim_yazi_pembe {
+            background-color: rgb(241,102,102);
+            color: white;
+            font-size: 18px;
+            border: 2px solid rgb(241,102,102);
+            border-radius: 5px;
+            top: 200px;
+            left: 45px;
+            position: absolute;
+            padding: 5px;
+        }
+
+        .dropdown-item {
+            color: black;
+        }
+
+        .navbarDropdownMenuLink {
+            color: white;
+        }
+ 

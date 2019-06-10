@@ -1,0 +1,671 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="EmlakSDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="__MigrationHistory">
+    <Key>
+      <PropertyRef Name="MigrationId" />
+      <PropertyRef Name="ContextKey" />
+    </Key>
+    <Property Name="MigrationId" Type="nvarchar" MaxLength="150" Nullable="false" />
+    <Property Name="ContextKey" Type="nvarchar" MaxLength="300" Nullable="false" />
+    <Property Name="Model" Type="varbinary(max)" Nullable="false" />
+    <Property Name="ProductVersion" Type="nvarchar" MaxLength="32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Adres">
+    <Key>
+      <PropertyRef Name="AdresID" />
+    </Key>
+    <Property Name="AdresID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Il" Type="nvarchar(max)" />
+    <Property Name="Ilce" Type="nvarchar(max)" />
+    <Property Name="UpdateDate" Type="datetime" Nullable="false" />
+    <Property Name="DeleteDate" Type="datetime" Nullable="false" />
+    <Property Name="CreateDate" Type="datetime" Nullable="false" />
+    <Property Name="isDeleted" Type="bit" Nullable="false" />
+    <Property Name="Koordinat" Type="nchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="DaireTips">
+    <Key>
+      <PropertyRef Name="DaireTipID" />
+    </Key>
+    <Property Name="DaireTipID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Adi" Type="nvarchar(max)" />
+    <Property Name="UpdateDate" Type="datetime" Nullable="false" />
+    <Property Name="DeleteDate" Type="datetime" Nullable="false" />
+    <Property Name="CreateDate" Type="datetime" Nullable="false" />
+    <Property Name="isDeleted" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="EmlakFotoes">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="KucukFotoYol" Type="nvarchar(max)" />
+    <Property Name="BuyukFotoYol" Type="nvarchar(max)" />
+    <Property Name="KapakFotoYol" Type="nvarchar(max)" />
+    <Property Name="UpdateDate" Type="datetime" Nullable="false" />
+    <Property Name="DeleteDate" Type="datetime" Nullable="false" />
+    <Property Name="CreateDate" Type="datetime" Nullable="false" />
+    <Property Name="isDeleted" Type="bit" Nullable="false" />
+    <Property Name="Emlak_EmlakID" Type="int" />
+  </EntityType>
+  <EntityType Name="EmlakOzelliks">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AcikBalkon" Type="bit" Nullable="false" />
+    <Property Name="CelikKapi" Type="bit" Nullable="false" />
+    <Property Name="DolaplıMutfak" Type="bit" Nullable="false" />
+    <Property Name="Dusakabin" Type="bit" Nullable="false" />
+    <Property Name="FransizBalkon" Type="bit" Nullable="false" />
+    <Property Name="KapaliBalkon" Type="bit" Nullable="false" />
+    <Property Name="Kartonpiyer" Type="bit" Nullable="false" />
+    <Property Name="Laminant" Type="bit" Nullable="false" />
+    <Property Name="OcakDogalgazi" Type="bit" Nullable="false" />
+    <Property Name="SeramikZemin" Type="bit" Nullable="false" />
+    <Property Name="SicakSu" Type="bit" Nullable="false" />
+    <Property Name="Asansor" Type="bit" Nullable="false" />
+    <Property Name="GuneyCepheli" Type="bit" Nullable="false" />
+    <Property Name="Hidrafor" Type="bit" Nullable="false" />
+    <Property Name="IsiYalitimi" Type="bit" Nullable="false" />
+    <Property Name="CaddeyeYakin" Type="bit" Nullable="false" />
+    <Property Name="Dolmus" Type="bit" Nullable="false" />
+    <Property Name="OkulaYakin" Type="bit" Nullable="false" />
+    <Property Name="UpdateDate" Type="datetime" Nullable="false" />
+    <Property Name="DeleteDate" Type="datetime" Nullable="false" />
+    <Property Name="CreateDate" Type="datetime" Nullable="false" />
+    <Property Name="isDeleted" Type="bit" Nullable="false" />
+    <Property Name="Emlak_EmlakID" Type="int" />
+  </EntityType>
+  <EntityType Name="Emlaks">
+    <Key>
+      <PropertyRef Name="EmlakID" />
+    </Key>
+    <Property Name="EmlakID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="KatNumarasi" Type="int" Nullable="false" />
+    <Property Name="DaireNo" Type="nvarchar(max)" />
+    <Property Name="BrutMetrekare" Type="int" Nullable="false" />
+    <Property Name="NetMetrekare" Type="int" Nullable="false" />
+    <Property Name="BanyoSayisi" Type="int" Nullable="false" />
+    <Property Name="PiyasaBedeli" Type="float" Nullable="false" />
+    <Property Name="KiraBedeli" Type="float" Nullable="false" />
+    <Property Name="Aidat" Type="float" Nullable="false" />
+    <Property Name="BinaYasi" Type="int" Nullable="false" />
+    <Property Name="KatSayisi" Type="int" Nullable="false" />
+    <Property Name="Cephe" Type="nvarchar(max)" />
+    <Property Name="IsinmaSekli" Type="nvarchar(max)" />
+    <Property Name="Otopark" Type="bit" Nullable="false" />
+    <Property Name="UpdateDate" Type="datetime" Nullable="false" />
+    <Property Name="DeleteDate" Type="datetime" Nullable="false" />
+    <Property Name="CreateDate" Type="datetime" Nullable="false" />
+    <Property Name="isDeleted" Type="bit" Nullable="false" />
+    <Property Name="Adresi_AdresID" Type="int" />
+    <Property Name="Dairetipi_DaireTipID" Type="int" />
+    <Property Name="Durumu_KonutDurumID" Type="int" />
+    <Property Name="Sahibi_MusteriID" Type="int" />
+    <Property Name="Turu_TurID" Type="int" />
+  </EntityType>
+  <EntityType Name="KiraSozlesmes">
+    <Key>
+      <PropertyRef Name="KiraSozlesmeID" />
+    </Key>
+    <Property Name="KiraSozlesmeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SozlesmeBaslangic_Tarihi" Type="datetime" Nullable="false" />
+    <Property Name="SozlesmeBitis_Tarihi" Type="datetime" Nullable="false" />
+    <Property Name="Depozito" Type="int" Nullable="false" />
+    <Property Name="UpdateDate" Type="datetime" Nullable="false" />
+    <Property Name="DeleteDate" Type="datetime" Nullable="false" />
+    <Property Name="CreateDate" Type="datetime" Nullable="false" />
+    <Property Name="isDeleted" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="KonutDurums">
+    <Key>
+      <PropertyRef Name="KonutDurumID" />
+    </Key>
+    <Property Name="KonutDurumID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Adi" Type="nvarchar(max)" />
+    <Property Name="CreateDate" Type="datetime" />
+    <Property Name="UpdateDate" Type="datetime" />
+    <Property Name="DeleteDate" Type="datetime" />
+    <Property Name="isDeleted" Type="bit" />
+  </EntityType>
+  <EntityType Name="MusteriLikes">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="MusteriID" Type="int" />
+    <Property Name="EmlakId" Type="int" />
+    <Property Name="CreateDate" Type="datetime" />
+    <Property Name="UpdateDate" Type="datetime" />
+    <Property Name="DeleteDate" Type="datetime" />
+    <Property Name="isDeleted" Type="bit" />
+  </EntityType>
+  <EntityType Name="Musteris">
+    <Key>
+      <PropertyRef Name="MusteriID" />
+    </Key>
+    <Property Name="MusteriID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Adi" Type="nvarchar(max)" />
+    <Property Name="Soyadi" Type="nvarchar(max)" />
+    <Property Name="TC" Type="int" Nullable="false" />
+    <Property Name="DogumTarihi" Type="datetime" Nullable="false" />
+    <Property Name="UpdateDate" Type="datetime" Nullable="false" />
+    <Property Name="DeleteDate" Type="datetime" Nullable="false" />
+    <Property Name="CreateDate" Type="datetime" Nullable="false" />
+    <Property Name="isDeleted" Type="bit" Nullable="false" />
+    <Property Name="Adresi_AdresID" Type="int" />
+    <Property Name="Personel_PersonelID" Type="int" />
+  </EntityType>
+  <EntityType Name="OdemePlans">
+    <Key>
+      <PropertyRef Name="OdemePlanID" />
+    </Key>
+    <Property Name="OdemePlanID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TaksitSayisi" Type="int" Nullable="false" />
+    <Property Name="ToplamOdeme" Type="int" Nullable="false" />
+    <Property Name="UpdateDate" Type="datetime" Nullable="false" />
+    <Property Name="DeleteDate" Type="datetime" Nullable="false" />
+    <Property Name="CreateDate" Type="datetime" Nullable="false" />
+    <Property Name="isDeleted" Type="bit" Nullable="false" />
+    <Property Name="Sozlesme_SozlesmeID" Type="int" />
+  </EntityType>
+  <EntityType Name="Personels">
+    <Key>
+      <PropertyRef Name="PersonelID" />
+    </Key>
+    <Property Name="PersonelID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Adi" Type="nvarchar(max)" />
+    <Property Name="Soyadi" Type="nvarchar(max)" />
+    <Property Name="TC" Type="int" Nullable="false" />
+    <Property Name="DogumTarihi" Type="datetime" Nullable="false" />
+    <Property Name="AktifMi" Type="bit" Nullable="false" />
+    <Property Name="UpdateDate" Type="datetime" Nullable="false" />
+    <Property Name="DeleteDate" Type="datetime" Nullable="false" />
+    <Property Name="CreateDate" Type="datetime" Nullable="false" />
+    <Property Name="isDeleted" Type="bit" Nullable="false" />
+    <Property Name="Adresi_AdresID" Type="int" />
+  </EntityType>
+  <EntityType Name="Portfoys">
+    <Key>
+      <PropertyRef Name="PortfoyID" />
+    </Key>
+    <Property Name="PortfoyID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FiyatMax" Type="int" Nullable="false" />
+    <Property Name="FiyaMin" Type="int" Nullable="false" />
+    <Property Name="Depozito" Type="int" Nullable="false" />
+    <Property Name="Takas" Type="bit" Nullable="false" />
+    <Property Name="AciklamaBaslik" Type="nvarchar(max)" />
+    <Property Name="Aciklama" Type="nvarchar(max)" />
+    <Property Name="OneCikan" Type="bit" Nullable="false" />
+    <Property Name="OneCikmaTarihi" Type="datetime" Nullable="false" />
+    <Property Name="UpdateDate" Type="datetime" Nullable="false" />
+    <Property Name="DeleteDate" Type="datetime" Nullable="false" />
+    <Property Name="CreateDate" Type="datetime" Nullable="false" />
+    <Property Name="isDeleted" Type="bit" Nullable="false" />
+    <Property Name="Emlaki_EmlakID" Type="int" />
+    <Property Name="Musteriler_MusteriID" Type="int" />
+    <Property Name="Personeli_PersonelID" Type="int" />
+  </EntityType>
+  <EntityType Name="Roles">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Adi" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreateDate" Type="datetime" />
+    <Property Name="UpdateDate" Type="datetime" />
+    <Property Name="DeleteDate" Type="datetime" />
+    <Property Name="isDeleted" Type="bit" />
+  </EntityType>
+  <EntityType Name="SatisSozlesmes">
+    <Key>
+      <PropertyRef Name="SatisSozlesmeID" />
+    </Key>
+    <Property Name="SatisSozlesmeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SozlesmeTarihi" Type="datetime" Nullable="false" />
+    <Property Name="UpdateDate" Type="datetime" Nullable="false" />
+    <Property Name="DeleteDate" Type="datetime" Nullable="false" />
+    <Property Name="CreateDate" Type="datetime" Nullable="false" />
+    <Property Name="isDeleted" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Slider">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PATH" Type="nvarchar" MaxLength="120" Nullable="false" />
+    <Property Name="PRIORTY" Type="int" Nullable="false" />
+    <Property Name="PLACE" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CreateDate" Type="datetime" />
+    <Property Name="UpdateDate" Type="datetime" />
+    <Property Name="DeleteDate" Type="datetime" />
+    <Property Name="isDeleted" Type="bit" />
+  </EntityType>
+  <EntityType Name="Sozlesmes">
+    <Key>
+      <PropertyRef Name="SozlesmeID" />
+    </Key>
+    <Property Name="SozlesmeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SozlesmeTarihi" Type="datetime" Nullable="false" />
+    <Property Name="UpdateDate" Type="datetime" Nullable="false" />
+    <Property Name="DeleteDate" Type="datetime" Nullable="false" />
+    <Property Name="CreateDate" Type="datetime" Nullable="false" />
+    <Property Name="isDeleted" Type="bit" Nullable="false" />
+    <Property Name="KiraSozlesmesi_KiraSozlesmeID" Type="int" />
+    <Property Name="Musterisi_MusteriID" Type="int" />
+    <Property Name="OdemePlan_OdemePlanID" Type="int" />
+    <Property Name="OdemePlani_OdemePlanID" Type="int" />
+    <Property Name="Portfoyu_PortfoyID" Type="int" />
+    <Property Name="SatisSozlesmesi_SatisSozlesmeID" Type="int" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="Turs">
+    <Key>
+      <PropertyRef Name="TurID" />
+    </Key>
+    <Property Name="TurID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Adi" Type="nvarchar(max)" />
+    <Property Name="UpdateDate" Type="datetime" Nullable="false" />
+    <Property Name="DeleteDate" Type="datetime" Nullable="false" />
+    <Property Name="CreateDate" Type="datetime" Nullable="false" />
+    <Property Name="isDeleted" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="KullaniciAdi" Type="nvarchar" MaxLength="50" />
+    <Property Name="Sifre" Type="nvarchar" MaxLength="50" />
+    <Property Name="isDeleted" Type="bit" />
+    <Property Name="RolID" Type="int" />
+    <Property Name="PersonelID" Type="int" />
+    <Property Name="CreateDate" Type="datetime" />
+    <Property Name="UpdateDate" Type="datetime" />
+    <Property Name="DeleteDate" Type="datetime" />
+  </EntityType>
+  <Association Name="FK_dbo_EmlakFotoes_dbo_Emlaks_Emlak_EmlakID">
+    <End Role="Emlaks" Type="Self.Emlaks" Multiplicity="0..1" />
+    <End Role="EmlakFotoes" Type="Self.EmlakFotoes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Emlaks">
+        <PropertyRef Name="EmlakID" />
+      </Principal>
+      <Dependent Role="EmlakFotoes">
+        <PropertyRef Name="Emlak_EmlakID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_EmlakOzelliks_dbo_Emlaks_Emlak_EmlakID">
+    <End Role="Emlaks" Type="Self.Emlaks" Multiplicity="0..1" />
+    <End Role="EmlakOzelliks" Type="Self.EmlakOzelliks" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Emlaks">
+        <PropertyRef Name="EmlakID" />
+      </Principal>
+      <Dependent Role="EmlakOzelliks">
+        <PropertyRef Name="Emlak_EmlakID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Emlaks_dbo_Adres_Adresi_AdresID">
+    <End Role="Adres" Type="Self.Adres" Multiplicity="0..1" />
+    <End Role="Emlaks" Type="Self.Emlaks" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Adres">
+        <PropertyRef Name="AdresID" />
+      </Principal>
+      <Dependent Role="Emlaks">
+        <PropertyRef Name="Adresi_AdresID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Emlaks_dbo_DaireTips_Dairetipi_DaireTipID">
+    <End Role="DaireTips" Type="Self.DaireTips" Multiplicity="0..1" />
+    <End Role="Emlaks" Type="Self.Emlaks" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DaireTips">
+        <PropertyRef Name="DaireTipID" />
+      </Principal>
+      <Dependent Role="Emlaks">
+        <PropertyRef Name="Dairetipi_DaireTipID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Emlaks_dbo_KonutDurums_Durumu_KonutDurumID">
+    <End Role="KonutDurums" Type="Self.KonutDurums" Multiplicity="0..1" />
+    <End Role="Emlaks" Type="Self.Emlaks" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="KonutDurums">
+        <PropertyRef Name="KonutDurumID" />
+      </Principal>
+      <Dependent Role="Emlaks">
+        <PropertyRef Name="Durumu_KonutDurumID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Emlaks_dbo_Musteris_Sahibi_MusteriID">
+    <End Role="Musteris" Type="Self.Musteris" Multiplicity="0..1" />
+    <End Role="Emlaks" Type="Self.Emlaks" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Musteris">
+        <PropertyRef Name="MusteriID" />
+      </Principal>
+      <Dependent Role="Emlaks">
+        <PropertyRef Name="Sahibi_MusteriID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Emlaks_dbo_Turs_Turu_TurID">
+    <End Role="Turs" Type="Self.Turs" Multiplicity="0..1" />
+    <End Role="Emlaks" Type="Self.Emlaks" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Turs">
+        <PropertyRef Name="TurID" />
+      </Principal>
+      <Dependent Role="Emlaks">
+        <PropertyRef Name="Turu_TurID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Musteris_dbo_Adres_Adresi_AdresID">
+    <End Role="Adres" Type="Self.Adres" Multiplicity="0..1" />
+    <End Role="Musteris" Type="Self.Musteris" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Adres">
+        <PropertyRef Name="AdresID" />
+      </Principal>
+      <Dependent Role="Musteris">
+        <PropertyRef Name="Adresi_AdresID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Musteris_dbo_Personels_Personel_PersonelID">
+    <End Role="Personels" Type="Self.Personels" Multiplicity="0..1" />
+    <End Role="Musteris" Type="Self.Musteris" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Personels">
+        <PropertyRef Name="PersonelID" />
+      </Principal>
+      <Dependent Role="Musteris">
+        <PropertyRef Name="Personel_PersonelID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_OdemePlans_dbo_Sozlesmes_Sozlesme_SozlesmeID">
+    <End Role="Sozlesmes" Type="Self.Sozlesmes" Multiplicity="0..1" />
+    <End Role="OdemePlans" Type="Self.OdemePlans" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sozlesmes">
+        <PropertyRef Name="SozlesmeID" />
+      </Principal>
+      <Dependent Role="OdemePlans">
+        <PropertyRef Name="Sozlesme_SozlesmeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Personels_dbo_Adres_Adresi_AdresID">
+    <End Role="Adres" Type="Self.Adres" Multiplicity="0..1" />
+    <End Role="Personels" Type="Self.Personels" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Adres">
+        <PropertyRef Name="AdresID" />
+      </Principal>
+      <Dependent Role="Personels">
+        <PropertyRef Name="Adresi_AdresID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Portfoys_dbo_Emlaks_Emlaki_EmlakID">
+    <End Role="Emlaks" Type="Self.Emlaks" Multiplicity="0..1" />
+    <End Role="Portfoys" Type="Self.Portfoys" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Emlaks">
+        <PropertyRef Name="EmlakID" />
+      </Principal>
+      <Dependent Role="Portfoys">
+        <PropertyRef Name="Emlaki_EmlakID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Portfoys_dbo_Musteris_Musteriler_MusteriID">
+    <End Role="Musteris" Type="Self.Musteris" Multiplicity="0..1" />
+    <End Role="Portfoys" Type="Self.Portfoys" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Musteris">
+        <PropertyRef Name="MusteriID" />
+      </Principal>
+      <Dependent Role="Portfoys">
+        <PropertyRef Name="Musteriler_MusteriID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Portfoys_dbo_Personels_Personeli_PersonelID">
+    <End Role="Personels" Type="Self.Personels" Multiplicity="0..1" />
+    <End Role="Portfoys" Type="Self.Portfoys" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Personels">
+        <PropertyRef Name="PersonelID" />
+      </Principal>
+      <Dependent Role="Portfoys">
+        <PropertyRef Name="Personeli_PersonelID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Sozlesmes_dbo_KiraSozlesmes_KiraSozlesmesi_KiraSozlesmeID">
+    <End Role="KiraSozlesmes" Type="Self.KiraSozlesmes" Multiplicity="0..1" />
+    <End Role="Sozlesmes" Type="Self.Sozlesmes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="KiraSozlesmes">
+        <PropertyRef Name="KiraSozlesmeID" />
+      </Principal>
+      <Dependent Role="Sozlesmes">
+        <PropertyRef Name="KiraSozlesmesi_KiraSozlesmeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Sozlesmes_dbo_Musteris_Musterisi_MusteriID">
+    <End Role="Musteris" Type="Self.Musteris" Multiplicity="0..1" />
+    <End Role="Sozlesmes" Type="Self.Sozlesmes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Musteris">
+        <PropertyRef Name="MusteriID" />
+      </Principal>
+      <Dependent Role="Sozlesmes">
+        <PropertyRef Name="Musterisi_MusteriID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Sozlesmes_dbo_OdemePlans_OdemePlan_OdemePlanID">
+    <End Role="OdemePlans" Type="Self.OdemePlans" Multiplicity="0..1" />
+    <End Role="Sozlesmes" Type="Self.Sozlesmes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OdemePlans">
+        <PropertyRef Name="OdemePlanID" />
+      </Principal>
+      <Dependent Role="Sozlesmes">
+        <PropertyRef Name="OdemePlan_OdemePlanID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Sozlesmes_dbo_OdemePlans_OdemePlani_OdemePlanID">
+    <End Role="OdemePlans" Type="Self.OdemePlans" Multiplicity="0..1" />
+    <End Role="Sozlesmes" Type="Self.Sozlesmes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OdemePlans">
+        <PropertyRef Name="OdemePlanID" />
+      </Principal>
+      <Dependent Role="Sozlesmes">
+        <PropertyRef Name="OdemePlani_OdemePlanID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Sozlesmes_dbo_Portfoys_Portfoyu_PortfoyID">
+    <End Role="Portfoys" Type="Self.Portfoys" Multiplicity="0..1" />
+    <End Role="Sozlesmes" Type="Self.Sozlesmes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Portfoys">
+        <PropertyRef Name="PortfoyID" />
+      </Principal>
+      <Dependent Role="Sozlesmes">
+        <PropertyRef Name="Portfoyu_PortfoyID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Sozlesmes_dbo_SatisSozlesmes_SatisSozlesmesi_SatisSozlesmeID">
+    <End Role="SatisSozlesmes" Type="Self.SatisSozlesmes" Multiplicity="0..1" />
+    <End Role="Sozlesmes" Type="Self.Sozlesmes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SatisSozlesmes">
+        <PropertyRef Name="SatisSozlesmeID" />
+      </Principal>
+      <Dependent Role="Sozlesmes">
+        <PropertyRef Name="SatisSozlesmesi_SatisSozlesmeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MusteriLikes_Emlaks">
+    <End Role="Emlaks" Type="Self.Emlaks" Multiplicity="0..1" />
+    <End Role="MusteriLikes" Type="Self.MusteriLikes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Emlaks">
+        <PropertyRef Name="EmlakID" />
+      </Principal>
+      <Dependent Role="MusteriLikes">
+        <PropertyRef Name="EmlakId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MusteriLikes_Musteris">
+    <End Role="Musteris" Type="Self.Musteris" Multiplicity="0..1" />
+    <End Role="MusteriLikes" Type="Self.MusteriLikes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Musteris">
+        <PropertyRef Name="MusteriID" />
+      </Principal>
+      <Dependent Role="MusteriLikes">
+        <PropertyRef Name="MusteriID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="EmlakSDBModelStoreContainer">
+    <EntitySet Name="__MigrationHistory" EntityType="Self.__MigrationHistory" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Adres" EntityType="Self.Adres" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DaireTips" EntityType="Self.DaireTips" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="EmlakFotoes" EntityType="Self.EmlakFotoes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="EmlakOzelliks" EntityType="Self.EmlakOzelliks" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Emlaks" EntityType="Self.Emlaks" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="KiraSozlesmes" EntityType="Self.KiraSozlesmes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="KonutDurums" EntityType="Self.KonutDurums" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MusteriLikes" EntityType="Self.MusteriLikes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Musteris" EntityType="Self.Musteris" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="OdemePlans" EntityType="Self.OdemePlans" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Personels" EntityType="Self.Personels" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Portfoys" EntityType="Self.Portfoys" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Roles" EntityType="Self.Roles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SatisSozlesmes" EntityType="Self.SatisSozlesmes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Slider" EntityType="Self.Slider" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Sozlesmes" EntityType="Self.Sozlesmes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Turs" EntityType="Self.Turs" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_dbo_EmlakFotoes_dbo_Emlaks_Emlak_EmlakID" Association="Self.FK_dbo_EmlakFotoes_dbo_Emlaks_Emlak_EmlakID">
+      <End Role="Emlaks" EntitySet="Emlaks" />
+      <End Role="EmlakFotoes" EntitySet="EmlakFotoes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_EmlakOzelliks_dbo_Emlaks_Emlak_EmlakID" Association="Self.FK_dbo_EmlakOzelliks_dbo_Emlaks_Emlak_EmlakID">
+      <End Role="Emlaks" EntitySet="Emlaks" />
+      <End Role="EmlakOzelliks" EntitySet="EmlakOzelliks" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Emlaks_dbo_Adres_Adresi_AdresID" Association="Self.FK_dbo_Emlaks_dbo_Adres_Adresi_AdresID">
+      <End Role="Adres" EntitySet="Adres" />
+      <End Role="Emlaks" EntitySet="Emlaks" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Emlaks_dbo_DaireTips_Dairetipi_DaireTipID" Association="Self.FK_dbo_Emlaks_dbo_DaireTips_Dairetipi_DaireTipID">
+      <End Role="DaireTips" EntitySet="DaireTips" />
+      <End Role="Emlaks" EntitySet="Emlaks" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Emlaks_dbo_KonutDurums_Durumu_KonutDurumID" Association="Self.FK_dbo_Emlaks_dbo_KonutDurums_Durumu_KonutDurumID">
+      <End Role="KonutDurums" EntitySet="KonutDurums" />
+      <End Role="Emlaks" EntitySet="Emlaks" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Emlaks_dbo_Musteris_Sahibi_MusteriID" Association="Self.FK_dbo_Emlaks_dbo_Musteris_Sahibi_MusteriID">
+      <End Role="Musteris" EntitySet="Musteris" />
+      <End Role="Emlaks" EntitySet="Emlaks" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Emlaks_dbo_Turs_Turu_TurID" Association="Self.FK_dbo_Emlaks_dbo_Turs_Turu_TurID">
+      <End Role="Turs" EntitySet="Turs" />
+      <End Role="Emlaks" EntitySet="Emlaks" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Musteris_dbo_Adres_Adresi_AdresID" Association="Self.FK_dbo_Musteris_dbo_Adres_Adresi_AdresID">
+      <End Role="Adres" EntitySet="Adres" />
+      <End Role="Musteris" EntitySet="Musteris" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Musteris_dbo_Personels_Personel_PersonelID" Association="Self.FK_dbo_Musteris_dbo_Personels_Personel_PersonelID">
+      <End Role="Personels" EntitySet="Personels" />
+      <End Role="Musteris" EntitySet="Musteris" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_OdemePlans_dbo_Sozlesmes_Sozlesme_SozlesmeID" Association="Self.FK_dbo_OdemePlans_dbo_Sozlesmes_Sozlesme_SozlesmeID">
+      <End Role="Sozlesmes" EntitySet="Sozlesmes" />
+      <End Role="OdemePlans" EntitySet="OdemePlans" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Personels_dbo_Adres_Adresi_AdresID" Association="Self.FK_dbo_Personels_dbo_Adres_Adresi_AdresID">
+      <End Role="Adres" EntitySet="Adres" />
+      <End Role="Personels" EntitySet="Personels" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Portfoys_dbo_Emlaks_Emlaki_EmlakID" Association="Self.FK_dbo_Portfoys_dbo_Emlaks_Emlaki_EmlakID">
+      <End Role="Emlaks" EntitySet="Emlaks" />
+      <End Role="Portfoys" EntitySet="Portfoys" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Portfoys_dbo_Musteris_Musteriler_MusteriID" Association="Self.FK_dbo_Portfoys_dbo_Musteris_Musteriler_MusteriID">
+      <End Role="Musteris" EntitySet="Musteris" />
+      <End Role="Portfoys" EntitySet="Portfoys" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Portfoys_dbo_Personels_Personeli_PersonelID" Association="Self.FK_dbo_Portfoys_dbo_Personels_Personeli_PersonelID">
+      <End Role="Personels" EntitySet="Personels" />
+      <End Role="Portfoys" EntitySet="Portfoys" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Sozlesmes_dbo_KiraSozlesmes_KiraSozlesmesi_KiraSozlesmeID" Association="Self.FK_dbo_Sozlesmes_dbo_KiraSozlesmes_KiraSozlesmesi_KiraSozlesmeID">
+      <End Role="KiraSozlesmes" EntitySet="KiraSozlesmes" />
+      <End Role="Sozlesmes" EntitySet="Sozlesmes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Sozlesmes_dbo_Musteris_Musterisi_MusteriID" Association="Self.FK_dbo_Sozlesmes_dbo_Musteris_Musterisi_MusteriID">
+      <End Role="Musteris" EntitySet="Musteris" />
+      <End Role="Sozlesmes" EntitySet="Sozlesmes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Sozlesmes_dbo_OdemePlans_OdemePlan_OdemePlanID" Association="Self.FK_dbo_Sozlesmes_dbo_OdemePlans_OdemePlan_OdemePlanID">
+      <End Role="OdemePlans" EntitySet="OdemePlans" />
+      <End Role="Sozlesmes" EntitySet="Sozlesmes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Sozlesmes_dbo_OdemePlans_OdemePlani_OdemePlanID" Association="Self.FK_dbo_Sozlesmes_dbo_OdemePlans_OdemePlani_OdemePlanID">
+      <End Role="OdemePlans" EntitySet="OdemePlans" />
+      <End Role="Sozlesmes" EntitySet="Sozlesmes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Sozlesmes_dbo_Portfoys_Portfoyu_PortfoyID" Association="Self.FK_dbo_Sozlesmes_dbo_Portfoys_Portfoyu_PortfoyID">
+      <End Role="Portfoys" EntitySet="Portfoys" />
+      <End Role="Sozlesmes" EntitySet="Sozlesmes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Sozlesmes_dbo_SatisSozlesmes_SatisSozlesmesi_SatisSozlesmeID" Association="Self.FK_dbo_Sozlesmes_dbo_SatisSozlesmes_SatisSozlesmesi_SatisSozlesmeID">
+      <End Role="SatisSozlesmes" EntitySet="SatisSozlesmes" />
+      <End Role="Sozlesmes" EntitySet="Sozlesmes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MusteriLikes_Emlaks" Association="Self.FK_MusteriLikes_Emlaks">
+      <End Role="Emlaks" EntitySet="Emlaks" />
+      <End Role="MusteriLikes" EntitySet="MusteriLikes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MusteriLikes_Musteris" Association="Self.FK_MusteriLikes_Musteris">
+      <End Role="Musteris" EntitySet="Musteris" />
+      <End Role="MusteriLikes" EntitySet="MusteriLikes" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

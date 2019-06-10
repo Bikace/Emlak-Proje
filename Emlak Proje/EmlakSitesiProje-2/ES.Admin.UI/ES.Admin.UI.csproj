@@ -6314,9 +6314,9 @@
     <Content Include="Content\Template\dist\img\photo2.png" />
     <Content Include="Content\Template\dist\img\photo3.jpg" />
     <Content Include="Content\Template\dist\img\photo4.jpg" />
-    <Content Include="Content\Template\dist\img\user1-128x128.jpg" />
+    <Content Include="Content\Template\dist\img\5Ivan_Güneşli.jpg" />
     <Content Include="Content\Template\dist\img\user2-160x160.jpg" />
-    <Content Include="Content\Template\dist\img\user3-128x128.jpg" />
+    <Content Include="Content\Template\dist\img\6Birkan_Köse.jpg" />
     <Content Include="Content\Template\dist\img\user4-128x128.jpg" />
     <Content Include="Content\Template\dist\img\user5-128x128.jpg" />
     <Content Include="Content\Template\dist\img\user6-128x128.jpg" />
@@ -7159,15 +7159,20 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\DefaultController.cs" />
     <Compile Include="Controllers\EmlakController.cs" />
+    <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\MusteriController.cs" />
     <Compile Include="Controllers\PersonelController.cs" />
     <Compile Include="Controllers\PortfoyController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Enums.cs" />
+    <Compile Include="Models\LoginControl.cs" />
     <Compile Include="Models\PortfoyDTO.cs" />
+    <Compile Include="Models\SesPer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -7194,6 +7199,7 @@
     <Content Include="Views\Portfoy\Index.cshtml" />
     <Content Include="Views\Portfoy\Create.cshtml" />
     <Content Include="Views\Portfoy\Edit.cshtml" />
+    <Content Include="Views\Login\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -7203,6 +7209,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Base\" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="Content\Template\bower_components\moment\moment.d.ts" />

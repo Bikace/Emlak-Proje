@@ -1,0 +1,53 @@
+﻿@model IEnumerable<ES.Data.Personel>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<p>
+    @Html.ActionLink("Yeni Personel Oluştur", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            Adi
+        </th>
+        <th>
+            Soyadi
+        </th>
+
+        <th>
+            DogumTarihi
+        </th>
+
+      
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Adi)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Soyadi)
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.DogumTarihi)
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.Adre.Il)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.PersonelID }) |
+                @Html.ActionLink("Details", "Details", new { id = item.PersonelID }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.PersonelID })
+            </td>
+        </tr>
+    }
+
+</table>
